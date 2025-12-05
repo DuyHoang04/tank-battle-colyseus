@@ -23,7 +23,7 @@ export default config({
         /**
          * Serve static files from public folder
          */
-        app.use('/game', express.static(path.join(__dirname, '../public')));
+        app.use('/', express.static(path.join(__dirname, '../public')));
 
         app.get("/hello_world", (req, res) => {
             res.send("It's time to kick ass and chew bubblegum!");
